@@ -5,7 +5,7 @@ local TweenService = game:GetService("TweenService")
 local UIS = game:GetService("UserInputService")
 local player = Players.LocalPlayer
 
-local saveFile = "WataX_Key.txt"
+local saveFile = "WataX_Key_Yahayuk.txt"
 
 
 local function saveKey(k)
@@ -23,7 +23,7 @@ end
 
 
 local function isKeyValid(k)
-    local url = "https://raw.githubusercontent.com/WataXScript/WataXMountAtin/main/Loader/eldl/"..k
+    local url = "https://raw.githubusercontent.com/WataXScript/WataXMountYahayuk1/main/Loader/eldl/"..k
     local success, data = pcall(function()
         return game:HttpGet(url)
     end)
@@ -218,8 +218,8 @@ local lastKey = loadKey()
 if lastKey and isKeyValid(lastKey) then
     print("Auto login berhasil, key valid:", lastKey)
     mainFrame.Visible = false
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountAtin/main/Loader/WataX.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountAtin/main/Loader/mainmap792.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountYahayuk1/main/Loader/WataX.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountYahayuk1/main/Loader/mainmap970.lua"))()
 end
 
 
@@ -229,8 +229,8 @@ submitBtn.MouseButton1Click:Connect(function()
         saveKey(inputKey)
         print("Key benar:", inputKey)
         mainFrame.Visible = false
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountAtin/main/Loader/WataX.lua"))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountAtin/main/Loader/mainmap792.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountYahayuk1/main/Loader/WataX.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountYahayuk1/main/Loader/mainmap970.lua"))()
     else
         print("Key salah:", inputKey)
     end
