@@ -5796,7 +5796,7 @@ speedDown.MouseButton1Click:Connect(function()
     end
 end)
 speedUp.MouseButton1Click:Connect(function()
-    playbackRate = math.min(50, playbackRate + 0.25)
+    playbackRate = math.min(5, playbackRate + 0.25)
     if speedValue and speedValue:IsDescendantOf(game) then
         speedValue.Text = string.format("%.2fx", playbackRate)
     end
