@@ -8,7 +8,7 @@ if not _G.WataX_Replay then return end
 
 
 local ROUTE_LINKS = {
-    "https://raw.githubusercontent.com/WataXScAja/WataXScIni/refs/heads/main/20.lua",
+    "https://raw.githubusercontent.com/WataXScAja/WataXScIni/refs/heads/main/21.lua",
     "https://raw.githubusercontent.com/USERNAME/REPO/main/route2.lua",
     "https://raw.githubusercontent.com/USERNAME/REPO/main/route3.lua",
 }
