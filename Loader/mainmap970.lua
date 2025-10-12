@@ -12,7 +12,7 @@ local ROUTE_LINKS = {
 
 local routes = {}
 local isMoving = false
-local frameTime = 1/45
+local frameTime = 1 / 45
 local playbackRate = 1
 local isReplayRunning = false
 local lastReplayPos = nil
