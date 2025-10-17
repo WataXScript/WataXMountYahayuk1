@@ -14,7 +14,7 @@ local ROUTE_LINKS = {
 local routes = {}
 local animConn
 local isMoving = false
-local frameTime = 1/31
+local frameTime = 1/30
 local playbackRate = 1
 local isReplayRunning = false
 local triggeredCP = {} 
@@ -110,7 +110,7 @@ local function startMovement() isMoving = true end
 local function stopMovement() isMoving = false end
 
 
-local DEFAULT_HEIGHT = 2.9
+local DEFAULT_HEIGHT = 6.45
 local function getCurrentHeight()
     local char = player.Character or player.CharacterAdded:Wait()
     local humanoid = char:WaitForChild("Humanoid")
