@@ -110,7 +110,7 @@ local function startMovement() isMoving = true end
 local function stopMovement() isMoving = false end
 
 
-local DEFAULT_HEIGHT = 2.9
+local DEFAULT_HEIGHT = 6.4
 local function getCurrentHeight()
     local char = player.Character or player.CharacterAdded:Wait()
     local humanoid = char:WaitForChild("Humanoid")
